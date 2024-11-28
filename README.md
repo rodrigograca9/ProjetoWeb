@@ -1,4 +1,5 @@
-# Projeto da unidade curricular de Desenvolvimento para Web
+# Projeto de Desenvolvimento para Web
+## "Chef à Paisana"
 
 * Rodrigo Graça
 * Francisco Velhinho
@@ -58,3 +59,5 @@ Este é um projeto de um site simples e minimalista desenvolvido para divulgar e
 ## Informações
 * Instituto Superior de Contabilidade e Administração de Coimbra
 * Bencanta, Coimbra
+
+### :fork_and_knife: :sparkles:
