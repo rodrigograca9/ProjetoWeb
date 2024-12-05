@@ -20,7 +20,7 @@
 </details>
 
 ## Sobre o projeto
-Este é um projeto de um site simples e minimalista desenvolvido para divulgar e partilhar pratos e receitas. O objetivo é oferecer uma plataforma fácil de usar para os utilizadores explorarem e se inspirarem com receitas únicas.
+Este é um projeto de um site simples e minimalista desenvolvido para divulgar e partilhar pratos e receitas. O objetivo é oferecer uma plataforma fácil de usar para os utilizadores explorarem inspirarem-se com receitas únicas.
 
 ## Funcionalidades básicas
 ### Barra de Navegação: 
