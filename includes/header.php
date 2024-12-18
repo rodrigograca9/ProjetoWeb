@@ -33,9 +33,9 @@
             Entradas
           </a>
           <ul class="dropdown-menu" aria-labelledby="entradasDropdown">
-            <li><a class="dropdown-item" href="receitaspates.php">Patês</a></li>
-            <li><a class="dropdown-item" href="receitastostas.php">Tostas</a></li>
-            <li><a class="dropdown-item" href="receitasoutras.php">Outras</a></li>
+            <li><a class="dropdown-item" href="receitas.php?tipo=pates">Patês</a></li>
+            <li><a class="dropdown-item" href="receitas.php?tipo=tosta">Tostas</a></li>
+            <li><a class="dropdown-item" href="receitas.php?tipo=outras">Outras</a></li>
           </ul>
         </li>         
           <!-- "Pratos Principais" pelo menu dropdown -->
@@ -50,10 +50,10 @@
               Pratos Principais
             </a>
             <ul class="dropdown-menu" aria-labelledby="pratosPrincipaisDropdown">
-              <li><a class="dropdown-item" href="receitascarne.php">Carne</a></li>
-              <li><a class="dropdown-item" href="receitaspeixe.php">Peixe</a></li>
-              <li><a class="dropdown-item" href="receitassaladas.php">Saladas</a></li>
-              <li><a class="dropdown-item" href="receitasmassas.php">Massas</a></li>
+              <li><a class="dropdown-item" href="receitas.php?tipo=carne">Carne</a></li>
+              <li><a class="dropdown-item" href="receitas.php?tipo=peixe">Peixe</a></li>
+              <li><a class="dropdown-item" href="receitas.php?tipo=salada">Saladas</a></li>
+              <li><a class="dropdown-item" href="receitas.php?tipo=massa">Massas</a></li>
             </ul>
           </li>
           
@@ -69,8 +69,8 @@
             Sobremesas
           </a>
           <ul class="dropdown-menu" aria-labelledby="sobremesasDropdown">
-            <li><a class="dropdown-item" href="receitasdoces.php">Doces</a></li>
-            <li><a class="dropdown-item" href="receitasfrutas.php">Fruta</a></li>
+            <li><a class="dropdown-item" href="receitas.php?tipo=doce">Doces</a></li>
+            <li><a class="dropdown-item" href="receitas.php?tipo=frutas">Fruta</a></li>
           </ul>
         </li>
         </ul>

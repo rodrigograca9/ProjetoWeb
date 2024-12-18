@@ -118,7 +118,7 @@
     <!-- MAIS SUGESTÕES -->
     <section class="maisSugestoes py-5">
       <div class="container">
-        <h3 class="text-center fw-bold mb-5">Outras receitas que poderás gostar</h3>
+        <h3 class="text-center fw-bold mb-5" style="color: #5b3b1e;">Outras receitas que poderás gostar</h3>
         <div class="row g-4">
           <!-- Receita 1 -->
           <div class="col-md-4">

@@ -6,12 +6,6 @@
   font-family: 'Lato', sans-serif;
 }
 
-html, body{
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-
 #navbar{
   background: #442a00;
   padding: 20px;
@@ -33,7 +27,7 @@ html, body{
 }
 
 .navbar-toggler {
-  background-color: #fff !important; /* Cor de fundo do botão*/
+  background-color: #fff !important;
   border-color: #000;
 }
 
@@ -92,31 +86,10 @@ html, body{
   color: white; 
 }
 
-.inicio-content h3 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-}
-
-.inicio-content p {
-  font-size: 1rem;
-  line-height: 1.6;
-}
-
 #inicio .btn:hover {
   background-color: #5b3b1e;
   color: white;
   text-decoration: underline
-}
-
-/* CSS DO BODY */
-html, body {
-  height: 100%; /* A página usa 100% da altura da janela */
-  margin: 0; /* Remove as margens */
-}
-
-.fw-bold{
-  margin-top: 15px;
-  margin-left: 50px;
 }
 
 .imagemReceita img {
@@ -129,30 +102,8 @@ html, body {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-form.d-flex button {
-  color: #ffffff;
-  border: none;
-  border-radius: 5px;
-  padding: 5px 10px;
-}
-
 .maisSugestoes {
-  background-color: #f8f9fa;
-}
-
-.maisSugestoes h3 {
-  color: #5b3b1e;
-}
-
-.btn-outline-dark {
-  color: #5b3b1e !important;
-  border-color: #5b3b1e !important;
-}
-
-.btn-outline-dark:hover {
-  background-color: #5b3b1e !important; 
-  color: white !important;
-  border-color: #5b3b1e !important;
+  background-color: #dfdfdf;
 }
 
 .card {
@@ -167,16 +118,6 @@ form.d-flex button {
 .card img {
   height: 200px;
   object-fit: cover;
-}
-
-.btn{
-  margin-top: auto;
-}
-
-#btn-castanho{
-  background-color: #5b3b1e;
-  border-color: #5b3b1e;
-  color: white;
 }
 
 /* DENTRO DA PÁGINA DA RECEITA - BOTÕES */
@@ -245,7 +186,7 @@ form.d-flex button {
   }
 
   #parteImprimir, #parteImprimir * {
-    visibility: visible; /* Mostra apenas a seção que queremos imoprimir */
+    visibility: visible; /* Mostra apenas a secção que queremos imoprimir */
   }
 
   #parteImprimir {

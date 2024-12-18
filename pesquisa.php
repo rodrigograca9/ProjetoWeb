@@ -19,15 +19,15 @@ $receitas = $stmt->fetchAll(PDO::FETCH_ASSOC);
 <body>
     <?php require ('includes/header.php') ?>
 
-    <div class="container mt-4">
+    <div class="container mt-4" style="width: 100%">
         <h3>Resultados da Pesquisa para "<?php echo htmlspecialchars($query); ?>"</h3>
         <div class="row">
             <?php if (count($receitas) > 0): ?>
                 <?php foreach ($receitas as $receita): ?>
-                  <div class="col-md-4 mt-4">
+                  <div class="col-md-4 mt-4 mb-5">
                     <div class="card">
                         <img src="imgs/<?php echo $receita['imagem']; ?>" class="card-img-top" alt="<?php echo $receita['titulo']; ?>">
-                        <div class="card-body">
+                        <div class="card-body text-center">
                             <h5 class="card-title mb-2"><?php echo $receita['titulo']; ?></h5>
                             <div class="d-flex justify-content-center align-items-center mb-3">
                                 <div class="me-5 mb-2">
@@ -40,7 +40,7 @@ $receitas = $stmt->fetchAll(PDO::FETCH_ASSOC);
                                     <i class="bi bi-person"></i> <?php echo $receita['n_pessoas']; ?> pessoas
                                 </div>
                             </div>
-                            <a href="receita.php?id=<?php echo $receita['id']; ?>" class="btn" style="color: white; background-color: #5b3b1e;">Ver Receita</a>
+                            <a href="receita.php?id=<?php echo $receita['id']; ?>" class="btn btn-outline-dark">Ver Receita</a>
                         </div>
                     </div>
                 <?php endforeach; ?>
@@ -49,6 +49,7 @@ $receitas = $stmt->fetchAll(PDO::FETCH_ASSOC);
             <?php endif; ?>
         </div>
     </div>
+    
     <?php require ('includes/footer.php') ?>          
     <script src="js/bootstrap.bundle.min.js"></script>
 </body>

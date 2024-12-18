@@ -11,36 +11,43 @@
 <body>
 
   <style>
-        .footer {
-          background-color: #5b3b1e;
-          color: #fff;
-          padding: 20px;
-          text-align: center;
-          bottom: 0;
-          width: 100%;
-          position: relative;
-        }
+    
+    html, body {
+      height: 100%;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+    }
 
-        .footer-content {
-          max-width: 800px;
-          margin: 0 auto;
-        }
+    .container {
+      flex: 1;
+    }
 
-        .footer .social-icons a {
-          color: #fff;
-          margin: 0 10px;
-          font-size: 24px;
-          text-decoration: none;
-        }
+    .footer {
+      background-color: #5b3b1e;
+      color: #fff;
+      padding: 25px 0;
+      text-align: center;
+      width: 100%;
+      margin: 0;
+      bottom: 0;
+      position: relative;
+    }
 
-        .footer .newsletter-form {
-          margin-top: 10px;
-        }
+    .footer .social-icons a {
+      color: #fff;
+      margin: 0 10px;
+      font-size: 24px;
+      text-decoration: none;
+    }
 
-      </style>
+    .footer .newsletter-form {
+      margin-top: 10px;
+    }
 
+  </style>
 
-  <footer class="footer sticky-bottom mt-3">
+    <footer class="footer mt-3">
       <div class="footer-content">
         <p>Acompanha nas redes sociais que preferires!</p>
         <div class="social-icons">
