@@ -55,6 +55,7 @@ Este é um projeto de um site simples e minimalista desenvolvido para divulgar e
 * PHP
 * CSS
 * JavaScript
+* SQL
 
 ## Informações
 * Instituto Superior de Contabilidade e Administração de Coimbra
