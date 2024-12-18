@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tostas</title>
+    <title>Outras receitas</title>
     <?php require ('includes/linkscss.php') ?>
   </head>
   <body>
@@ -11,14 +11,14 @@
   <?php require ('includes/connections.php') ?>
   <?php $sql = 'SELECT * FROM receitas WHERE tipo_receita = :tipo_receita';
     $stmt = $dbh->prepare($sql);
-    $stmt->execute([':tipo_receita' => 'tosta']);
+    $stmt->execute([':tipo_receita' => 'outras']);
     $receitas = $stmt->fetchAll(PDO::FETCH_ASSOC);
   ?>
 
 <section class="receitas-carne mb-5" id="receitas-carne">
     <div class="container text-center">
-        <h3 class="fw-bold">Tostas</h3>
-        <p>Explore as melhores tostas para impressionar a sua família e amigos.</p>
+        <h3 class="fw-bold">Outras receitas</h3>
+        <p>Explore outras receitas para impressionar a sua família e amigos.</p>
         <div class="row">
             <?php foreach ($receitas as $receita): ?>
                 <div class="col-md-4 mt-4">

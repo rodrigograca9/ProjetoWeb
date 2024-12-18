@@ -11,7 +11,7 @@
   <?php require ('includes/connections.php') ?>
   <?php $sql = 'SELECT * FROM receitas WHERE tipo_receita = :tipo_receita';
     $stmt = $dbh->prepare($sql);
-    $stmt->execute([':tipo_receita' => 'tosta']);
+    $stmt->execute([':tipo_receita' => 'tostas']);
     $receitas = $stmt->fetchAll(PDO::FETCH_ASSOC);
   ?>
 

@@ -5,81 +5,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chef à Paisana</title>
     <?php require ('includes/linkscss.php')?>
-    <style>
-      .footer {
-        background-color: #5b3b1e;
-        color: #fff;
-        padding: 20px;
-        text-align: center;
-      }
 
-      .footer-content {
-        max-width: 800px;
-        margin: 0 auto;
-      }
-
-      .footer .social-icons a {
-        color: #fff;
-        margin: 0 10px;
-        font-size: 24px;
-        text-decoration: none;
-      }
-
-      .footer .newsletter-form {
-        margin-top: 10px;
-      }
-
-      .footer .newsletter-form input[type="email"] {
-        padding: 10px;
-        width: 60%;
-        margin-right: 5px;
-        border: none;
-        border-radius: 4px;
-      }
-
-      .footer .newsletter-form button {
-        padding: 10px 20px;
-        background-color: #000;
-        color: #fff;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-      }
-      
-      html, body {
-        height: 100%; /* Garante que a página use 100% da altura da janela */
-        margin: 0; /* Remove margens padrão */
-        display: flex;
-        flex-direction: column; /* Coloca o conteúdo em coluna */
-      }
-
-      body {
-        flex: 1; /* Permite que o conteúdo principal ocupe a altura restante */
-      }
-
-      footer {
-        background-color: #5b3b1e;
-        padding: 20px;
-        text-align: center;
-        margin-top: auto; /* Empurra o rodapé para o fim da página */
-      }
-    </style>
 </head>
-<footer class="footer mt-3">
-    <div class="footer-content">
-      <p>Acompanha nas redes sociais que preferires!</p>
-      <div class="social-icons">
-        <a href="#"><i class="bi bi-youtube"></i></a>
-        <a href="#"><i class="bi bi-instagram"></i></a>
-        <a href="#"><i class="bi bi-tiktok"></i></a>
-        <a href="#"><i class="bi bi-facebook"></i></i></a>
-      </div>
-      <p>Subscreva a newsletter para não perder nenhuma receita</p>
-      <form class="newsletter-form">
-        <input type="email" placeholder="O seu email:" required>
-        <button type="submit">Enviar</button>
-      </form>
-    </div>
-  </footer>
+
+<body>
+
+  <style>
+        .footer {
+          background-color: #5b3b1e;
+          color: #fff;
+          padding: 20px;
+          text-align: center;
+          bottom: 0;
+          width: 100%;
+          position: relative;
+        }
+
+        .footer-content {
+          max-width: 800px;
+          margin: 0 auto;
+        }
+
+        .footer .social-icons a {
+          color: #fff;
+          margin: 0 10px;
+          font-size: 24px;
+          text-decoration: none;
+        }
+
+        .footer .newsletter-form {
+          margin-top: 10px;
+        }
+
+      </style>
+
+
+  <footer class="footer sticky-bottom mt-3">
+      <div class="footer-content">
+        <p>Acompanha nas redes sociais que preferires!</p>
+        <div class="social-icons">
+          <a href="#"><i class="bi bi-youtube"></i></a>
+          <a href="#"><i class="bi bi-instagram"></i></a>
+          <a href="#"><i class="bi bi-tiktok"></i></a>
+          <a href="#"><i class="bi bi-facebook"></i></i></a>
+        </div>
+        <p>Subscreva a newsletter para não perder nenhuma receita</p>
+        <form id="newsletterForm" action="newsletter.php" method="POST" style="display: flex; justify-content: center; margin-top: 10px;">
+          <input type="email" name="email" placeholder="O seu email:" required style="padding: 10px; width: 60%; margin-right: 10px; border: 1px solid #ccc; border-radius: 4px;">
+          <button type="submit" style="padding: 10px 20px; background-color:rgb(0, 0, 0); color: #fff; border: none; border-radius: 4px; cursor: pointer; transition: background-color 0.3s;">Enviar</button>
+        </form>
+        <div id="notification" style="display:none; position:fixed; bottom:20px; right:20px; background-color:#808080; color:white; padding:15px; border-radius:5px;"></div>
+        </div>
+    </footer>
+    <script>
+  document.getElementById('newsletterForm').addEventListener('submit', function(event) {
+      event.preventDefault(); 
+
+      const formData = new FormData(this); 
+
+      fetch('newsletter.php', {
+          method: 'POST',
+          body: formData
+      })
+      .then(response => response.text())
+      .then(data => {
+          showNotification(data); 
+      })
+      .catch(error => console.error('Erro:', error)); 
+  });
+
+  function showNotification(message) {
+      const notification = document.getElementById('notification');
+      notification.innerText = message;
+      notification.style.display = 'block';
+      setTimeout(() => {
+          notification.style.display = 'none';
+      }, 3000); //3 segundos
+  }
+  </script>
 </body>
 </html>

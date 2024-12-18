@@ -6,12 +6,6 @@
   font-family: 'Lato', sans-serif;
 }
 
-html, body{
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-
 #navbar{
   background: #442a00;
   padding: 20px;
@@ -108,10 +102,66 @@ html, body{
   text-decoration: underline
 }
 
+/* css do rodapé*/
+.footer {
+  background-color: #5b3b1e;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 4px 0 6px rgba(0, 0, 0, 0.8);
+}
+
+.footer-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.footer .social-icons a {
+  color: #fff;
+  margin: 0 10px;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.footer .newsletter-form {
+  margin-top: 10px;
+}
+
+.footer .newsletter-form input[type="email"] {
+  padding: 10px;
+  width: 60%;
+  margin-right: 5px;
+  border: none;
+  border-radius: 4px;
+}
+
+.footer .newsletter-form button {
+  padding: 10px 20px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
 /* CSS DO BODY */
 html, body {
   height: 100%; /* A página usa 100% da altura da janela */
   margin: 0; /* Remove as margens */
+  display: flex;
+  flex-direction: column;
+  padding-top: 45px;
+  flex: 1;
+}
+
+footer {
+  background-color: #5b3b1e;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  margin-top: auto; /* Rodapé no fim da página */
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .fw-bold{
