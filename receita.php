@@ -20,6 +20,13 @@ if (!$receita) {
     echo "Receita não encontrada.";
     exit;
 }
+
+$tipoReceitaAtual = $receita['tipo_receita'];
+
+$sqlRelacionadas = 'SELECT * FROM receitas WHERE tipo_receita = :tipo_receita AND id != :id LIMIT 3';
+$stmtRelacionadas = $dbh->prepare($sqlRelacionadas);
+$stmtRelacionadas->execute([':tipo_receita' => $tipoReceitaAtual, ':id' => $receita['id']]);
+$receitasRelacionadas = $stmtRelacionadas->fetchAll(PDO::FETCH_ASSOC);
 ?>
 
 <!DOCTYPE html>
@@ -37,7 +44,7 @@ if (!$receita) {
 
 <div id="parteImprimir" class="container mt-4 mb-5">
     <div class="text-center">
-        <h1 class="fw-bold"><?php echo $receita['titulo']; ?></h1>
+        <h1 class="fw-bold" style="margin-top: 90px"><?php echo $receita['titulo']; ?></h1>
         <img src="imgs/<?php echo $receita['imagem']; ?>" alt="<?php echo $receita['titulo']; ?>" class="img-fluid my-4">
         
         <h3 style="text-align: left" class="fw-bold mt-5 mb-4">Vais precisar dos seguintes ingredientes:</h3>
@@ -95,6 +102,39 @@ if (!$receita) {
                 }
             </style>
         </div>
+
+        <section class="bg-light py-5">
+            <div class="container">
+                <h3 class="text-start fw-bold mb-5" style="color: #5b3b1e;">Receitas relacionadas:</h3>
+                <div class="row g-4">
+                    <?php if (!empty($receitasRelacionadas)): ?>
+                    <?php foreach ($receitasRelacionadas as $receitaRelacionada): ?>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="imgs/<?php echo $receitaRelacionada['imagem']; ?>" class="card-img-top" alt="<?php echo $receitaRelacionada['titulo']; ?>">
+                            <div class="card-body text-center">
+                                <h5 class="card-title"><?php echo $receitaRelacionada['titulo']; ?></h5>
+                                <div class="d-flex justify-content-center align-items-center mb-3">
+                                    <div class="me-5 mb-2"><i class="bi bi-clock"></i> <?php echo $receitaRelacionada['temp_prep']; ?> min</div>
+                                    <div class="me-5 mb-2"><i class="bi bi-star"></i> <?php echo $receitaRelacionada['dificuldade']; ?></div>
+                                    <div><i class="bi bi-person"></i> <?php echo $receitaRelacionada['n_pessoas']; ?> pessoas</div>
+                                </div>
+                                <a href="receita.php?id=<?php echo $receitaRelacionada['id']; ?>" class="btn" 
+                                    style="border: 1px solid #5b3b1e; color: #5b3b1e; background-color: transparent;"
+                                    onmouseover="this.style.backgroundColor='#5b3b1e'; this.style.color='white';" 
+                                    onmouseout="this.style.backgroundColor='transparent'; this.style.color='#5b3b1e';">
+                                    Ver Receita
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <?php endforeach; ?>
+                    <?php else: ?>
+                    <h4>Nenhuma receita relacionada encontrada.</h4>
+                    <?php endif; ?>
+                </div>
+            </div>
+        </section>
 
 <?php require ('includes/footer.php') ?>
 

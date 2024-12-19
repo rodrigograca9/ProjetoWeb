@@ -32,6 +32,7 @@
       margin: 0;
       bottom: 0;
       position: relative;
+      box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.8);
     }
 
     .footer .social-icons a {
@@ -58,7 +59,7 @@
         </div>
         <p>Subscreva a newsletter para não perder nenhuma receita</p>
         <form id="newsletterForm" action="newsletter.php" method="POST" style="display: flex; justify-content: center; margin-top: 10px;">
-          <input type="email" name="email" placeholder="O seu email:" required style="padding: 10px; width: 60%; margin-right: 10px; border: 1px solid #ccc; border-radius: 4px;">
+          <input type="email" name="email" placeholder="O seu email:" required style="padding: 10px; width: 25%; margin-right: 10px; border: 1px solid #ccc; border-radius: 4px;">
           <button type="submit" style="padding: 10px 20px; background-color:rgb(0, 0, 0); color: #fff; border: none; border-radius: 4px; cursor: pointer; transition: background-color 0.3s;">Enviar</button>
         </form>
         <div id="notification" style="display:none; position:fixed; bottom:20px; right:20px; background-color:#808080; color:white; padding:15px; border-radius:5px;"></div>

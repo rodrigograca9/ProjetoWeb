@@ -1,6 +1,8 @@
 <?php
 require('includes/connections.php');
 
+$tipoReceita = ''; // Inicializa a variável
+
 if (isset($_GET['tipo'])) {
     $tipoReceita = htmlspecialchars($_GET['tipo']);
     
@@ -23,7 +25,7 @@ if (isset($_GET['tipo'])) {
 
     <div class="container text-center">
       <?php if (!empty($receitas)): ?>
-          <h3 class="fw-bold">Receitas de <?php echo ucfirst($tipoReceita); ?></h3>
+          <h3 class="fw-bold" style="margin-top: 110px">Receitas de <?php echo ucfirst($tipoReceita); ?></h3>
           <p>Explore e aprenda as melhores receitas de <?php echo $tipoReceita; ?> para impressionar a sua família e amigos.</p>
           <div class="row">
               <?php foreach ($receitas as $receita): ?>
@@ -37,7 +39,12 @@ if (isset($_GET['tipo'])) {
                                   <div class="me-5 mb-2"><i class="bi bi-star"></i> <?php echo $receita['dificuldade']; ?></div>
                                   <div><i class="bi bi-person"></i> <?php echo $receita['n_pessoas']; ?> pessoas</div>
                               </div>
-                              <a href="receita.php?id=<?php echo $receita['id']; ?>" class="btn btn-outline-dark">Ver Receita</a>
+                                <a href="receita.php?id=<?php echo $receita['id']; ?>" class="btn" 
+                                    style="border: 1px solid #5b3b1e; color: #5b3b1e; background-color: transparent;"
+                                    onmouseover="this.style.backgroundColor='#5b3b1e'; this.style.color='white';" 
+                                    onmouseout="this.style.backgroundColor='transparent'; this.style.color='#5b3b1e';">
+                                    Ver Receita
+                                </a>
                           </div>
                       </div>
                   </div>

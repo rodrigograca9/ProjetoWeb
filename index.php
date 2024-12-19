@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chef à Paisana</title>
-    <?php require ('includes/linkscss.php') ?>
+    <?php require ('includes/linkscss.php'); ?>
   </head>
   <body>
-  <?php require ('includes/header.php') ?>
+  <?php require ('includes/header.php'); ?>
 
      <!--CAROUSEL  DE SUGESTÕES-->
-    <div class="container-fluid">
+    <div class="container-fluid" style="margin-top: 100px">
       <div class="row mb-5 mt-5">
         <div class="col-12 col-md-10 col-lg-6 offset-md-1 offset-md-3">
           <div class="carousel slide" id="galeria-principal" data-bs-ride="carousel">
@@ -43,7 +43,7 @@
               </div>
             </div>
             <div class="carousel-item" data-bs-interval="2000">
-              <<a href="receita.php?id=7"><img src="imgs/lasagna-de-sardinha-e-curgete.jpg" alt="Imagem do carousel" class="d-block w-100"></a>
+              <a href="receita.php?id=7"><img src="imgs/lasagna-de-sardinha-e-curgete.jpg" alt="Imagem do carousel" class="d-block w-100"></a>
               <div class="carousel-caption d-none d-md-block">
                 <h2 class="fw-bold">Inove com sabores tradicionais!</h2>
                 <h5>Lasanha de sardinha e curgete</h5>
@@ -57,13 +57,13 @@
 
     
     <!-- SUGESTÕES DE RECEITAS-->
-    <section class="inicio mb-3" id="inicio">
+    <section class="inicio mb-3">
       <div class="inicio-content">
-        <h3 class="fw-bold mb-5">Sugestões de Receitas:</h3>
+        <h3 class="fw-bold mb-5 ms-5">Sugestões de Receitas:</h3>
         <div class="container text-center">
-          <div class="row align.items-center">
+          <div class="row align-items-center">
             <div class="col-md-6 mb-4">
-              <h5 class="fw-bold">Ovos Benedict com legumes e pão de cereais</h5>
+              <h5 class="fw-bold">Ovos Benedict com legumes no pão</h5>
               <p class="text-start">Esta versão mais portuguesa de ovos Benedict, com azeite, legumes frescos e pão de cereais, vai transformar os seus pequenos-almoços de fim de semana numa verdadeira experiência gastronómica. O sabor suave dos ovos escalfados combinado com a crocância do pão de cereais e a frescura dos legumes salteados cria um prato equilibrado e delicioso. Ideal para quem procura uma refeição nutritiva e cheia de sabor.
                 Uma receita rápida e fácil, que se faz em menos de 30 minutos, perfeita para reunir a família à mesa.</p>
                 <a href="receita.php?id=13" class="btn mt-3" style="background-color:#5b3b1e; color:white;">Ver Mais</a>
@@ -116,7 +116,7 @@
 
 
     <!-- MAIS SUGESTÕES -->
-    <section class="maisSugestoes py-5">
+    <section class="maisSugestoes bg-light py-5">
       <div class="container">
         <h3 class="text-center fw-bold mb-5" style="color: #5b3b1e;">Outras receitas que poderás gostar</h3>
         <div class="row g-4">
@@ -127,7 +127,9 @@
               <div class="card-body text-center">
                 <h5 class="card-title fw-bold">Salada de bagos com camarão</h5>
                 <p class="card-text">Mantenha a forma e sacie a sua fome com esta salada de bagos com camarão, rica em proteínas e repleta de sabores frescos. Uma opção deliciosa e nutritiva para quem busca uma alimentação equilibrada.</p>
-                <a href="receita.php?id=11" class="btn btn-sm btn-outline-dark">Ver Mais</a>
+                <a href="receita.php?id=11" class="btn btn-sm btn-outline-dark btn-ver-mais" style="border: 1px solid #5b3b1e; color: #5b3b1e; background-color: transparent;"
+                                    onmouseover="this.style.backgroundColor='#5b3b1e'; this.style.color='white';" 
+                                    onmouseout="this.style.backgroundColor='transparent'; this.style.color='#5b3b1e';">Ver Mais</a>
               </div>
             </div>
           </div>
@@ -139,7 +141,9 @@
               <div class="card-body text-center">
                 <h5 class="card-title fw-bold">Massa com pesto de iogurte</h5>
                 <p class="card-text">Prepare um refeição de massa integral em apenas 30 minutos, envolvida num pesto de iogurte, com o sabor fresco da hortelã e do manjericão. Simples e muito saboroso!</p>
-                <a href="receita.php?id=10" class="btn btn-sm btn-outline-dark">Ver Mais</a>
+                <a href="receita.php?id=10" class="btn btn-sm btn-outline-dark btn-ver-mais" style="border: 1px solid #5b3b1e; color: #5b3b1e; background-color: transparent;"
+                                    onmouseover="this.style.backgroundColor='#5b3b1e'; this.style.color='white';" 
+                                    onmouseout="this.style.backgroundColor='transparent'; this.style.color='#5b3b1e';">Ver Mais</a>
               </div>
             </div>
           </div>
@@ -150,8 +154,10 @@
               <img src="imgs/pasta-de-beterraba.jpg" class="card-img-top rounded" alt="">
               <div class="card-body text-center">
                 <h5 class="card-title fw-bold">Pasta de beterraba</h5>
-                <p class="card-text">O sabor forte da beterraba não agrada a todos, mas esta receita de pasta de beterraba é capaz de mudar opiniões. Experimente e comprove-o.</p>
-                <a href="receita.php?id=12" class="btn btn-sm btn-outline-dark">Ver Mais</a>
+                <p class="card-text">O sabor extremamente forte da beterraba não agrada a todos, mas esta receita de pasta de beterraba é capaz de mudar opiniões. Experimente e comprove por si prórpio.</p>
+                <a href="receita.php?id=12" class="btn btn-sm btn-outline-dark btn-ver-mais" style="border: 1px solid #5b3b1e; color: #5b3b1e; background-color: transparent;"
+                                    onmouseover="this.style.backgroundColor='#5b3b1e'; this.style.color='white';" 
+                                    onmouseout="this.style.backgroundColor='transparent'; this.style.color='#5b3b1e';">Ver Mais</a>
               </div>
             </div>
           </div>
