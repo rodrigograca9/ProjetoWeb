@@ -57,55 +57,40 @@
 
     
     <!-- SUGESTÕES DE RECEITAS-->
-    <section class="inicio mb-3">
-      <div class="inicio-content">
-        <h3 class="fw-bold mb-5 ms-5">Sugestões de Receitas:</h3>
-        <div class="container text-center">
-          <div class="row align-items-center">
-            <div class="col-md-6 mb-4">
-              <h5 class="fw-bold">Ovos Benedict com legumes no pão</h5>
-              <p class="text-start">Esta versão mais portuguesa de ovos Benedict, com azeite, legumes frescos e pão de cereais, vai transformar os seus pequenos-almoços de fim de semana numa verdadeira experiência gastronómica. O sabor suave dos ovos escalfados combinado com a crocância do pão de cereais e a frescura dos legumes salteados cria um prato equilibrado e delicioso. Ideal para quem procura uma refeição nutritiva e cheia de sabor.
-                Uma receita rápida e fácil, que se faz em menos de 30 minutos, perfeita para reunir a família à mesa.</p>
-                <a href="receita.php?id=13" class="btn mt-3" style="background-color:#5b3b1e; color:white;">Ver Mais</a>
-            </div>
-            <div class="col-md-6 mb-4">
-              <div class="imagemReceita"><img class="img-fluid" src="imgs/ovos-benedict-legumes-pao-cereais.jpeg" alt=""></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <section class="inicio mt-5 mb-3" id="inicio">
       <div class="inicio-content">
         <div class="container text-center">
-          <div class="row align.items-center">
-            <div class="col-md-6 mb-4">
-              <div class="imagemReceita"><img class="img-fluid" src="imgs/batatas-recheadas-com-carne.jpeg" alt=""></div>
+          <h3 class="fw-bold mb-5">Sugestões de Receitas:</h3>
+          
+          <div class="row mb-4 align-items-start">
+            <div class="col-12 col-md-6 mb-4">
+              <img class="img-fluid" src="imgs/ovos-benedict-legumes-pao-cereais.jpeg" alt="Ovos Benedict" style="border-radius: 10px; transition: transform 0.3s;">
+              <h5 class="fw-bold mt-3">Ovos Benedict com legumes no pão</h5>
+              <p class="text-start">Esta versão mais portuguesa de ovos Benedict, com azeite, legumes frescos e pão de cereais, vai transformar os seus pequenos-almoços de fim de semana numa verdadeira experiência gastronómica.</p>
+              <a href="receita.php?id=13" class="btn mt-3" style="background-color:#5b3b1e; color:white;">Ver Mais</a>
             </div>
-            <div class="col-md-6 mb-4">
-              <h5 class="fw-bold">Batatas recheadas com carne</h5>
-              <p class="text-start">Bem tostadas no forno, estas batatinhas recheadas com carne, espinafres frescos e queijo são um verdadeiro petisco equilibrado e delicioso. O sabor robusto da carne combina perfeitamente com a suavidade dos espinafres e a cremosidade do queijo, criando uma explosão de sabores em cada mordida.
-                Além de deliciosas, são fáceis de preparar, tornando-se a escolha perfeita para uma refeição prática e saborosa, sem perder a qualidade. Ideal para servir como aperitivo em festas, ou para um jantar descontraído em família.</p>
-                <a href="receita.php?id=4" class="btn mt-3" style="background-color:#5b3b1e; color:white;">Ver Mais</a>
+            
+            <div class="col-12 col-md-6 mb-4">
+              <img class="img-fluid" src="imgs/lasagna-de-sardinha-e-curgete.jpg" alt="Lasanha de Sardinha" style="border-radius: 10px; transition: transform 0.3s;">
+              <h5 class="fw-bold mt-3">Lasanha de sardinha e curgete</h5>
+              <p class="text-start">Descubra a fusão perfeita entre a clássica lasanha italiana e o sabor autêntico da sardinha portuguesa nesta deliciosa lasanha de sardinha e curgete. Uma receita inovadora que surpreende pelo equilíbrio de sabores e pela sua leveza irresistível.</p>
+              <a href="receita.php?id=7" class="btn mt-3" style="background-color:#5b3b1e; color:white;">Ver Mais</a>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="inicio mt-5 mb-5" id="inicio">
-      <div class="inicio-content">
-        <div class="container text-center">
-          <div class="row align.items-center">
-            <div class="col-md-6 mb-4">
-              <h5 class="fw-bold">Lasanha de sardinhas e curgete</h5>
-              <p class="text-start">Descubra a fusão perfeita entre a clássica lasanha italiana e o sabor autêntico da sardinha portuguesa nesta deliciosa lasanha de sardinha e curgete. A combinação da sardinha, rica em sabor e benefícios para a saúde, com a leveza da curgete e a suavidade do queijo derretido, cria uma experiência gastronómica única.
-                Esta receita inovadora mantém o conforto e a tradição da lasanha, com um toque fresco e contemporâneo, ideal para quem procura novos sabores sem abrir mão da simplicidade e do prazer de uma boa refeição.</p>
-                <a href="receita.php?id=7" class="btn mt-3" style="background-color:#5b3b1e; color:white;">Ver Mais</a>
+          
+          <div class="row mb-4 align-items-center">
+            <div class="col-12 col-md-6 mb-4">
+              <img class="img-fluid" src="imgs/batatas-recheadas-com-carne.jpeg" alt="Batatas Recheadas" style="border-radius: 10px; transition: transform 0.3s;">
+              <h5 class="fw-bold mt-3">Batatas recheadas com carne</h5>
+              <p class="text-start">Uma receita que aquece a alma, perfeita para um jantar delicioso em família ou com amigos. Ideal para quem procura conforto e sabor num só prato, com uma combinação irresistível de texturas.</p>
+              <a href="receita.php?id=4" class="btn mt-3" style="background-color:#5b3b1e; color:white;">Ver Mais</a>
             </div>
-            <div class="col-md-6 col-sm-12 mb-4">
-              <div class="imagemReceita"><img class="img-fluid" src="imgs/lasagna-de-sardinha-e-curgete.jpg" alt=""></div>
+            
+            <div class="col-12 col-md-6 mb-4">
+              <img class="img-fluid" src="imgs/salada-de-bagos-com-camarao.jpg" alt="Salada de Bagos" style="border-radius: 10px; transition: transform 0.3s;">
+              <h5 class="fw-bold mt-3">Salada de bagos com camarão</h5>
+              <p class="text-start">Uma opção deliciosa e nutritiva para quem procura uma alimentação equilibrada, uma salada fresca e leve, perfeita para qualquer ocasião, que combina sabores simples e saborosos.</p>
+              <a href="receita.php?id=11" class="btn mt-3" style="background-color:#5b3b1e; color:white;">Ver Mais</a>
             </div>
           </div>
         </div>

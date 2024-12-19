@@ -1,14 +1,4 @@
-<!DOCTYPE html>
-<html lang="pt">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chef à Paisana</title>
-    <?php require ('includes/linkscss.php')?>
-
-</head>
-
-<body>
+<?php require ('includes/linkscss.php')?>
 
   <style>
     
@@ -91,5 +81,3 @@
       }, 3000); //3 segundos
   }
   </script>
-</body>
-</html>
