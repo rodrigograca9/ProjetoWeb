@@ -46,6 +46,7 @@ $receitasRelacionadas = $stmtRelacionadas->fetchAll(PDO::FETCH_ASSOC);
     <div class="text-center">
         <h1 class="fw-bold" style="margin-top: 90px"><?php echo $receita['titulo']; ?></h1>
         <img src="imgs/<?php echo $receita['imagem']; ?>" alt="<?php echo $receita['titulo']; ?>" class="img-fluid my-4">
+        <p class="mt-4"><?php echo htmlspecialchars($receita['descricao']); ?></p>
         
         <h3 style="text-align: left" class="fw-bold mt-5 mb-4">Vais precisar dos seguintes ingredientes:</h3>
         <ul class="list-group ms-4">
@@ -94,7 +95,7 @@ $receitasRelacionadas = $stmtRelacionadas->fetchAll(PDO::FETCH_ASSOC);
 
 
 
-        <div class="text-center mt-3 mb-5">
+        <div class="text-center mt-1 mb-5">
             <button onclick="history.back()" class="btn" style="color: white; background-color: #5b3b1e;">Voltar</button>
             <style>
                 .btn:hover {
@@ -102,6 +103,65 @@ $receitasRelacionadas = $stmtRelacionadas->fetchAll(PDO::FETCH_ASSOC);
                 }
             </style>
         </div>
+
+
+
+            <!-- SECÇÃO DE COMENTÁRIOS -->
+        <div style="width: 400px;" class="mt-3 mb-5 mx-auto">
+            <h4>Deixe o seu comentário</h4>
+            <form action="comentarioinserir.php" method="POST">
+                <input type="hidden" name="receitaId" value="<?= $id ?>">
+                <div class="mb-3">
+                    <input type="email" name="email" class="form-control" placeholder="Endereço de email" required>
+                </div>
+                <div class="mb-3">
+                    <textarea name="mensagem" class="form-control" rows="3" placeholder="Deixe a sua mensagem" required></textarea>
+                </div>
+                <div class="form-check mt-2 mb-2">
+                    <input name="aceito" class="form-check-input" type="checkbox" value="1" id="com-check" required>
+                    <label class="form-check-label" for="com-check">
+                        Permito o tratamento dos meus dados
+                    </label>
+                </div>
+                <button type="submit" class="btn btn-secondary">Enviar</button>
+            </form>
+        </div>
+
+        <!-- Seção para exibir comentários -->
+        <?php
+        $sql = 'SELECT * FROM comentarios WHERE receitaId = :i ORDER BY id DESC';
+        $stmt = $dbh->prepare($sql);
+        $stmt->bindValue(':i', $id);
+        $stmt->execute();
+        if(!$stmt || $stmt->rowCount() == 0){
+            $resultados = false;
+        }else $resultados = true;
+        ?>
+        <div class="container">
+            <div class="row">
+                <div class="col-6 fs-3 border-bottom border-dark">Comentários</div>
+            </div>
+            <?php
+            if($resultados){
+                while($c = $stmt->fetchObject()){
+            ?>
+                    <div class="row">
+                        <div class="col-auto">
+                            <i class="bi bi-person-bounding-box" style="font-size:48px;"></i>
+                        </div>
+                        <div class="col p-3">
+                            <div class="fw-light">Anónimo
+                            <div><?= $c->mensagem ?></div>
+                        </div>
+                    </div>
+            <?php 
+                }
+            }else{
+                echo '<p>Ainda não foram inseridos comentários.</p>';
+            }
+            ?>
+        </div>
+
 
         <section class="bg-light py-5">
             <div class="container">
@@ -135,6 +195,7 @@ $receitasRelacionadas = $stmtRelacionadas->fetchAll(PDO::FETCH_ASSOC);
                 </div>
             </div>
         </section>
+
 
 <?php require ('includes/footer.php') ?>
 

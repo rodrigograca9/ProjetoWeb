@@ -57,7 +57,7 @@
 
     
     <!-- SUGESTÕES DE RECEITAS-->
-    <section class="inicio mt-5 mb-3" id="inicio">
+    <section class="inicio mt-3 mb-3" id="inicio">
       <div class="inicio-content">
         <div class="container text-center">
           <h3 class="fw-bold mb-5">Sugestões de Receitas:</h3>
@@ -108,13 +108,14 @@
           <!-- Receita 1 -->
           <div class="col-md-4">
             <div class="card border-0 shadow h-100">
-              <img src="imgs/salada-de-bagos-com-camarao.jpg" class="card-img-top rounded" alt="">
+              <img src="imgs/tosta-de-cogumelos-e-burrata.jpg" class="card-img-top rounded" alt="">
               <div class="card-body text-center">
-                <h5 class="card-title fw-bold">Salada de bagos com camarão</h5>
-                <p class="card-text">Mantenha a forma e sacie a sua fome com esta salada de bagos com camarão, rica em proteínas e repleta de sabores frescos. Uma opção deliciosa e nutritiva para quem busca uma alimentação equilibrada.</p>
-                <a href="receita.php?id=11" class="btn btn-sm btn-outline-dark btn-ver-mais" style="border: 1px solid #5b3b1e; color: #5b3b1e; background-color: transparent;"
-                                    onmouseover="this.style.backgroundColor='#5b3b1e'; this.style.color='white';" 
-                                    onmouseout="this.style.backgroundColor='transparent'; this.style.color='#5b3b1e';">Ver Mais</a>
+                <h5 class="card-title fw-bold">Tosta de cogumelos e burrata</h5>
+                <p class="card-text">Saboreie esta tosta de cogumelos e burrata. Os cogumelos salteados combinam com a cremosidade e frescura da burrata, uma fusão de sabor e textura irresistível. Yummy!</p>
+                <a href="receita.php?id=20" class="btn btn-sm btn-outline-dark btn-ver-mais"
+                  style="border: 1px solid #5b3b1e; color: #5b3b1e; background-color: transparent;"
+                    onmouseover="this.style.backgroundColor='#5b3b1e'; this.style.color='white';" 
+                    onmouseout="this.style.backgroundColor='transparent'; this.style.color='#5b3b1e';">Ver Mais</a>
               </div>
             </div>
           </div>
@@ -126,9 +127,10 @@
               <div class="card-body text-center">
                 <h5 class="card-title fw-bold">Massa com pesto de iogurte</h5>
                 <p class="card-text">Prepare um refeição de massa integral em apenas 30 minutos, envolvida num pesto de iogurte, com o sabor fresco da hortelã e do manjericão. Simples e muito saboroso!</p>
-                <a href="receita.php?id=10" class="btn btn-sm btn-outline-dark btn-ver-mais" style="border: 1px solid #5b3b1e; color: #5b3b1e; background-color: transparent;"
-                                    onmouseover="this.style.backgroundColor='#5b3b1e'; this.style.color='white';" 
-                                    onmouseout="this.style.backgroundColor='transparent'; this.style.color='#5b3b1e';">Ver Mais</a>
+                <a href="receita.php?id=10" class="btn btn-sm btn-outline-dark btn-ver-mais"
+                  style="border: 1px solid #5b3b1e; color: #5b3b1e; background-color: transparent;"
+                    onmouseover="this.style.backgroundColor='#5b3b1e'; this.style.color='white';" 
+                    onmouseout="this.style.backgroundColor='transparent'; this.style.color='#5b3b1e';">Ver Mais</a>
               </div>
             </div>
           </div>
@@ -140,9 +142,10 @@
               <div class="card-body text-center">
                 <h5 class="card-title fw-bold">Pasta de beterraba</h5>
                 <p class="card-text">O sabor extremamente forte da beterraba não agrada a todos, mas esta receita de pasta de beterraba é capaz de mudar opiniões. Experimente e comprove por si prórpio.</p>
-                <a href="receita.php?id=12" class="btn btn-sm btn-outline-dark btn-ver-mais" style="border: 1px solid #5b3b1e; color: #5b3b1e; background-color: transparent;"
-                                    onmouseover="this.style.backgroundColor='#5b3b1e'; this.style.color='white';" 
-                                    onmouseout="this.style.backgroundColor='transparent'; this.style.color='#5b3b1e';">Ver Mais</a>
+                <a href="receita.php?id=12" class="btn btn-sm btn-outline-dark btn-ver-mais"
+                  style="border: 1px solid #5b3b1e; color: #5b3b1e; background-color: transparent;"
+                    onmouseover="this.style.backgroundColor='#5b3b1e'; this.style.color='white';" 
+                    onmouseout="this.style.backgroundColor='transparent'; this.style.color='#5b3b1e';">Ver Mais</a>
               </div>
             </div>
           </div>
