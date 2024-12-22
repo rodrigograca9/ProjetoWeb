@@ -5,12 +5,6 @@
     html, body {
       height: 100%;
       margin: 0;
-      display: flex;
-      flex-direction: column;
-    }
-
-    .container {
-      flex: 1;
     }
 
     .footer {

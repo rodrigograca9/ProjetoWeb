@@ -127,7 +127,7 @@ $receitasRelacionadas = $stmtRelacionadas->fetchAll(PDO::FETCH_ASSOC);
             </form>
         </div>
 
-        <!-- Seção para exibir comentários -->
+        <!-- Secção para exibir comentários -->
         <?php
         $sql = 'SELECT * FROM comentarios WHERE receitaId = :i ORDER BY id DESC';
         $stmt = $dbh->prepare($sql);
@@ -150,7 +150,7 @@ $receitasRelacionadas = $stmtRelacionadas->fetchAll(PDO::FETCH_ASSOC);
                             <i class="bi bi-person-bounding-box" style="font-size:48px;"></i>
                         </div>
                         <div class="col p-3">
-                            <div class="fw-light">Anónimo
+                            <div class="fw-light">Anónimo </div>
                             <div><?= $c->mensagem ?></div>
                         </div>
                     </div>
@@ -195,6 +195,7 @@ $receitasRelacionadas = $stmtRelacionadas->fetchAll(PDO::FETCH_ASSOC);
                 </div>
             </div>
         </section>
+
 
 
 <?php require ('includes/footer.php') ?>
