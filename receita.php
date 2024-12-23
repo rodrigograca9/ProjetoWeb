@@ -44,7 +44,7 @@ $receitasRelacionadas = $stmtRelacionadas->fetchAll(PDO::FETCH_ASSOC);
 
 <div id="parteImprimir" class="container mt-4 mb-5">
     <div class="text-center">
-        <h1 class="fw-bold" style="margin-top: 90px"><?php echo $receita['titulo']; ?></h1>
+        <h1 class="fw-bold" style="margin-top: 100px"><?php echo $receita['titulo']; ?></h1>
         <img src="imgs/<?php echo $receita['imagem']; ?>" alt="<?php echo $receita['titulo']; ?>" class="img-fluid my-4">
         <p class="mt-4"><?php echo htmlspecialchars($receita['descricao']); ?></p>
         
