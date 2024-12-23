@@ -213,32 +213,37 @@ $receitasRelacionadas = $stmtRelacionadas->fetchAll(PDO::FETCH_ASSOC);
     }
 </script>
 
-    <script>
+<script>
     function downloadReceita() {
-        const recipeTitle = <?php echo json_encode($receita['titulo']); ?>;
-        const ingredients = <?php echo json_encode($ingredientes); ?>;
-        const steps = <?php echo json_encode($preparacao); ?>;
+    const recipeTitle = <?php echo json_encode($receita['titulo']); ?>;
+    const ingredients = <?php echo json_encode($ingredientes); ?>;
+    const steps = <?php echo json_encode($preparacao); ?>;
 
-        // Formatar o texto da receita
-        let recipeText = `${recipeTitle}\n\nIngredientes:\n`;
-        
-        ingredients.forEach(ingrediente => {
-            recipeText += `${ingrediente}\n`;
+    // Formatar o texto da receita
+    let recipeText = `Receita: ${recipeTitle}\n\nIngredientes:\n`;
+    
+    ingredients.forEach(ingrediente => {
+        recipeText += `- ${ingrediente}\n`;
+    });
+
+    recipeText += `\nPreparação:\n`;
+    
+    if (Array.isArray(steps)) {
+        steps.forEach((step, index) => {
+            recipeText += `Passo ${index + 1}: ${step}\n`;
         });
+    } else {
+        recipeText += `Preparação não disponível.\n`;
+    }
 
-        recipeText += `\nPreparação:\n`;
-        steps.forEach(preparacao => {
-            recipeText += `${preparacao}\n`;
-        });
-
-        // Criar o arquivo de texto
-        const blob = new Blob([recipeText], { type: 'text/plain' });
-        const link = document.createElement('a');
-        link.href = URL.createObjectURL(blob);
-        link.download = `${recipeTitle}.txt`;
-        link.click();
-      }
-    </script>
+    // Criar o arquivo de texto
+    const blob = new Blob([recipeText], { type: 'text/plain' });
+    const link = document.createElement('a');
+    link.href = URL.createObjectURL(blob);
+    link.download = `${recipeTitle}.txt`;
+    link.click();
+    }
+</script>
 
 <script src="js/bootstrap.bundle.min.js"></script>
 
