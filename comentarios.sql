@@ -14,7 +14,7 @@
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
--- A despejar estrutura para tabela projetoweb.comentarios
+-- A despejar estrutura para tabela grupo202.comentarios
 DROP TABLE IF EXISTS `comentarios`;
 CREATE TABLE IF NOT EXISTS `comentarios` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
@@ -22,13 +22,18 @@ CREATE TABLE IF NOT EXISTS `comentarios` (
   `email` varchar(50) DEFAULT '0',
   `mensagem` text NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
--- A despejar dados para tabela projetoweb.comentarios: ~3 rows (aproximadamente)
+-- A despejar dados para tabela grupo202.comentarios: ~8 rows (aproximadamente)
 INSERT INTO `comentarios` (`id`, `receitaId`, `email`, `mensagem`) VALUES
 	(6, 13, 'rgraca0508@gmail.com', 'Receita bem explicada, fácil de seguir!'),
 	(7, 13, 'rgraca0508@gmail.com', 'A combinação de sabores é incrível, parabéns pela criatividade!'),
-	(8, 7, 'rgraca0508@gmail.com', 'Adorei a apresentação, ficou muito claro e detalhado.');
+	(8, 7, 'rgraca0508@gmail.com', 'Adorei a apresentação, ficou muito claro e detalhado.'),
+	(9, 1, 'rgraca0508@gmail.com', 'Teste'),
+	(10, 13, 'rgraca0508@gmail.com', 'hhhh'),
+	(11, 12, 'rgraca0508@gmail.com', 'teste'),
+	(12, 12, 'rgraca0508@gmail.com', 'testar'),
+	(13, 12, 'rgraca0508@gmail.com', 'ygty');
 
 /*!40103 SET TIME_ZONE=IFNULL(@OLD_TIME_ZONE, 'system') */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;

@@ -14,7 +14,7 @@
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
--- A despejar estrutura para tabela projetoweb.receitas
+-- A despejar estrutura para tabela grupo202.receitas
 DROP TABLE IF EXISTS `receitas`;
 CREATE TABLE IF NOT EXISTS `receitas` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
@@ -30,7 +30,7 @@ CREATE TABLE IF NOT EXISTS `receitas` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
--- A despejar dados para tabela projetoweb.receitas: ~21 rows (aproximadamente)
+-- A despejar dados para tabela grupo202.receitas: ~20 rows (aproximadamente)
 INSERT INTO `receitas` (`id`, `imagem`, `titulo`, `ingredientes`, `temp_prep`, `preparacao`, `dificuldade`, `n_pessoas`, `tipo_receita`, `descricao`) VALUES
 	(1, 'almondegas-com-quinoa-salada-e-molho-de-iogurte.jpg', 'Almôndegas com quinoa', 'carne de vitela picada  500 g,\r\ncurcuma  1 c. de sopa,\r\npimenta 5 bagas  1 q.b.,\r\nalho em pó       1,\r\nsalsa   1 c. de chá,\r\nhortelã fresca 1 c. de chá,\r\nsementes de sésamo  1 c. de sopa,\r\ncebola roxa 1 c. de sopa,\r\nazeite virgem extra  1 c. de sopa', 30, 'Passo 1: Misture a carne com cúrcuma, pimenta moída, alho em pó, salsa, hortelã picada, sementes de sésamo e cebola picada. Faça 24 bolas e reserve.;  \r\nPasso 2: Para o molho, misture todos os ingredientes no robot de cozinha até obter um molho cremoso e reserve.;  \r\nPasso 3: Rale o pepino e a couve, junte hortelã, manjericão, cebola em fatias finas e tempere com pimenta, azeite e vinagre.;  \r\nPasso 4: Aqueça o azeite numa frigideira e cozinhe as almôndegas por 10 minutos ou até dourarem.;  \r\nPasso 5: Lave a quinoa, coloque-a num tacho com água, alho, casca de limão e folhas de manjericão.;  \r\nPasso 6: Quando ferver, adicione a quinoa, cozinhe em lume médio-alto por 5 minutos, depois em lume brando por mais 10 minutos.;  \r\nPasso 7: Desligue o lume, tape e deixe repousar por 5 minutos, solte a quinoa e retire a casca de limão e o alho.;  \r\nPasso 8: Sirva as almôndegas com a salada, o molho e a quinoa.', 'Fácil', 4, 'carne', 'Estas almôndegas com quinoa cativam pela sua combinação da carne de vitela com os benefícios nutricionais da quinoa. Uma escolha saudável e saborosa de fácil preparação.'),
 	(2, 'carne-de-porco-jardineira.jpg', 'Carne de porco à jardineira', 'rojões de porco 400 g,\r\npimentão-doce   1 c. de sobremesa,\r\nsal             1 ½ c. de chá,\r\npimenta         q.b.,\r\nazeite virgem extra Pingo Doce   2 unid.,\r\ncebola cortada em meias-luas finas 1 unid. (100 g),\r\nalho picado    2 dente,\r\njardineira de vegetais congelada    1 emb. (750 g),\r\nvinho branco  100 ml,\r\npolpa de tomate com cebola e alho    ½ frasco (250 ml),\r\nbatata-doce descascada e cortada em cubos     400 g,\r\ncoentros frescos picados q.b.', 45, 'Passo 1: Tempere os rojões com o pimentão, meia colher de chá de sal e pimenta a gosto.;\r\nPasso 2: Aloure a carne num tacho com azeite quente em lume forte, reduza o lume, adicione cebola, alho, jardineira de vegetais, regue com vinho branco, tape e deixe cozinhar por 10 minutos.;\r\nPasso 3: Junte a polpa de tomate e a batata-doce, tempere com o restante sal e cozinhe tapado por mais 25 minutos.;\r\nPasso 4: Salpique com coentros, deixe arrefecer, coloque num recipiente hermético e guarde no frigorífico.', 'Fácil', 4, 'carne', 'Procura uma refeição fácil e saudável para o dia a dia? Prepare esta deliciosa receita de carne de porco à jardineira.'),
