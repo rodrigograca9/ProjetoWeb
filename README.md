@@ -41,14 +41,15 @@ Este é um projeto de um site simples e minimalista desenvolvido para divulgar e
   * Página específica para cada prato com:
     * Ingredientes necessários.
     * Modo de preparação e instruções detalhadas.
+    * Receitas relacionadas.
     * Outras informações adicionais.
 
 * Logo do Site: Presente na barra de navegação. Redireciona para a página inicial.
 
 ## Outras funcionalidades
-* Tradução: Opção para traduzir o site para outro idioma (extra).
 * Barra de Pesquisa: Pesquisa de receitas por nome ou ingrediente.
 * Newsletter: Opção para subscrever e receber notificações de novas receitas.
+* Comentários: Secção onde os utilizadores podem inserir e ver comentários.
 
 ## Linguagens utilizadas
 * HTML
